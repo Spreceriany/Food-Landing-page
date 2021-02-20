@@ -1,0 +1,11 @@
+@media only screen and(min-width:29.62em){
+    .hero__container::after{
+        width: 100vw !important;
+        height: 100vw !important;
+        border-radius: 20%;
+    }
+
+    .about-container .left-col{
+        margin-left: auto;
+    }
+}

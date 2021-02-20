@@ -1,0 +1,33 @@
+@media only screen and(min-width:29.62em){
+     body .hero{
+        background: transparent linear-gradient(180deg, #DEF0D8 0%, var(--unnamed-color-fafafa) 100%) 0% 0% no-repeat padding-box;
+        background: transparent linear-gradient(180deg, #DEF0D8 0%, #FAFAFA 100%) 0% 0% no-repeat padding-box;
+        &__container{
+            &::after {
+                 width: 100vw ;
+                 height: 100vw ;
+                 right: -20% ;
+                 top: 0 ;
+                
+                
+            }
+        }
+        .left-col{
+            h1,p{
+                color: black;
+            }
+
+
+    }
+
+    
+   
+    }
+    .about-container {
+        margin-top: 0;
+        .left-col{
+            margin-left: auto;
+        }
+    }
+  
+}

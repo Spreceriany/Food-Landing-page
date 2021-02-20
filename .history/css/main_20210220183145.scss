@@ -1,0 +1,367 @@
+@import "_header";
+@import "_overlay";
+@import "_tablet";
+@import "_desktop";
+
+$primary-green: #387546;
+$secondary-green: #598463;
+$orange: #f19a33;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+}
+
+p {
+  font-size: clamp(0.8rem, 5vw, 1.5rem);
+}
+
+.hero {
+  width: 100%;
+  min-height: 73vh;
+  z-index: 1;
+  position: relative;
+
+  &__container {
+    padding: 2em;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 4;
+    max-width: 90em;
+    margin: 0 auto;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 294vw;
+      height: 317vw;
+      z-index: -1;
+      top: -177vw;
+      right: -137vw;
+      background-color: #387546;
+      border-radius: 50%;
+      transform: scale(1);
+    }
+    .food-bg {
+      background-image: url("../images/background+pict.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      right: -36%;
+    }
+    .left-col {
+      width: 68%;
+      z-index: 2;
+      padding-top: 2em;
+      h1 {
+        color: white;
+        margin-bottom: 0.7em;
+      }
+      p {
+        color: white;
+        margin-bottom: 2em;
+        width: 70%;
+      }
+    }
+  }
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 0.6em 0.6em 0.6em 1em;
+  border-radius: 0.8em;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color .5s ease;
+  &:hover .button__icon{
+    transform: translateX(.4em);
+  }
+  &__gold {
+    background-color: $orange;
+   
+    &:hover{
+      background-color: $primary-green;
+      
+    }
+  }
+
+  &__green {
+    background-color: $primary-green;
+    &:hover{
+      background-color: $orange;
+      
+    }
+  }
+}
+
+.button__icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 1em;
+  transition: transform .5s ease;
+}
+
+.gold-accent {
+  color: $orange;
+}
+
+.paprika {
+  display: none;
+}
+.about-container {
+  padding: 1.5em;
+  margin-top: 10em;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: -42%;
+    top: 0%;
+    z-index: -1;
+    width: 100%;
+    height: 118%;
+    background-image: url("../images/vegetable_table.png");
+    background-position: 56% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .left-col {
+    width: 55%;
+    padding-right: 1.5em;
+    p {
+      margin-bottom: 0.5em;
+
+      line-height: 1.4em;
+    }
+    h2 {
+      margin-bottom: 0.5em;
+      font-weight: 600;
+    }
+    .lead {
+      margin-bottom: 1.5em;
+    }
+  }
+}
+
+.menu-container {
+  max-width: 85em;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  margin-top: 2em;
+  p,
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  p {
+  }
+  .lead {
+    margin-bottom: 2em;
+  }
+
+  .row {
+    flex-direction: column;
+    &__desc {
+      text-align: center;
+    }
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.45);
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .row {
+      padding: 1em 0em;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1em;
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.gallery {
+  text-align: center;
+  max-width: 89em;
+  margin: 0 auto;
+  h3 {
+    padding: 1em 0.5em;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    > img {
+      flex: 0 1 50%;
+      width: 50%;
+      height: auto;
+    }
+  }
+}
+
+.opening-hours {
+  max-width: 85em;
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    padding: 1em;
+    border-radius: 9999px;
+    align-items: center;
+    box-shadow: 0px 6px 12px -6px rgba(0, 0, 0, 0.75);
+    margin-bottom: 2em;
+    p,
+    h3 {
+      flex: 1 0 auto;
+    }
+    img,
+    h3 {
+      padding-bottom: 1em;
+    }
+    img {
+      width: 2em;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg-boa-mob.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+ 
+  img {
+    width: 20%;
+    height: auto;
+  }
+
+  .row {
+    padding-top: 3em;
+    display: flex;
+    flex-direction: row;
+    &:first-of-type {
+      padding-top: 0em;
+      justify-content: center;
+      img {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0em;
+        margin-bottom: 4em;
+      }
+    }
+
+    &:last-of-type {
+      padding-bottom: 2em;
+      img{
+        width: 1.6em;
+      }
+    }
+   
+    ul {
+      list-style-type: none;
+      text-align: center;
+      li {
+        display: inline-block;
+        padding: 0 2em;
+        font-weight: 600;
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: clamp(0.8rem, 4vw, 1.5rem);
+          transition: color 0.3s ease-in;
+           
+          &:hover{
+            color:$orange ;
+          }
+        }
+      }
+    }
+  }
+}

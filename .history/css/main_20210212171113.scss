@@ -1,0 +1,80 @@
+@import "_header";
+@import "_overlay";
+@import "_mobile";
+
+$primary-green: #387546;
+$secondary-green: #598463;
+$orange: #f19a33;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: transparent
+    linear-gradient(180deg, #def0d8 0%, var(--unnamed-color-fafafa) 100%) 0% 0%
+    no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #def0d8 0%, #fafafa 100%) 0%
+    0% no-repeat padding-box;
+  &__container {
+    padding: 2em;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    .left-col {
+      width: 67%;
+      h1{
+          color: white;
+          margin-bottom: .7em;
+      }
+      p{
+        color: white;
+        margin-bottom: 2em;
+        width: 70%;
+      }
+    }
+  }
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    padding: .7em 0.7em .7em 1em;
+}
+    border-radius: .8em;
+    display: inline-flex;
+    justify-content: space-between;
+    &__gold{
+        background-color: $orange;
+    }
+}
+
+.button__icon {
+    width: 0.9em;
+    height: 0.9em;
+    fill: currentcolor;
+    margin-right: 0.5em;
+  
+    &--end {
+      margin-right: 0;
+      margin-left: 0.5em;
+    }
+  }
+  

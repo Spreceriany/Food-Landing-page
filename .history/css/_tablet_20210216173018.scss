@@ -1,0 +1,96 @@
+@media only screen and(min-width:29.62em) {
+  body .hero {
+    background: transparent
+      linear-gradient(180deg, #def0d8 0%, var(--unnamed-color-fafafa) 100%) 0%
+      0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #def0d8 0%, #fafafa 100%) 0%
+      0% no-repeat padding-box;
+    &__container {
+      &::after {
+        width: 90vh;
+        height: 90vh;
+        z-index: 0;
+        top: -20vh;
+        right: -30vh;
+      }
+    }
+    .left-col {
+      width: 50%;
+
+      h1 {
+        margin-bottom: 0.2em;
+        color: black;
+      }
+
+      p {
+        color: #383833;
+      }
+
+      .btn {
+        padding: 0.8em 0.8em 0.8em 1.5em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width:40.31em) {
+  body .menu-container {
+    .card {
+      flex: 0 1 33%;
+    }
+
+    .wrap {
+      display: flex;
+      > div {
+        margin: 0.5em;
+      }
+    }
+  }
+
+  body .gallery__grid > img {
+    flex: 0 1 31%;
+
+    width: 31%;
+    margin: 0.3em;
+  }
+
+  .gallery {
+    padding: 2em;
+  }
+
+  body .opening-hours {
+    flex-direction: row;
+    justify-content: space-evenly;
+    &__card {
+      padding: 2em;
+      flex: 0 1 28%;
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  body footer{
+    background-image: url('../images/bg-boa-lg.svg');
+    .row:first-of-type{
+      margin-top: 10em;
+      img{
+        margin-top: -4em;
+        margin-bottom: 9em;
+        }
+      }
+
+    .row:nth-of-type(2) li{
+      padding: 0 3em;
+    }
+
+    .row:nth-of-type(3){
+      ul{
+        display: flex;
+      }
+    }
+    }
+  }
+
+
+

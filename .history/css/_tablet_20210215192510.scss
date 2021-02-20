@@ -1,0 +1,65 @@
+@media only screen and(min-width:29.62em) {
+  body .hero {
+    background: transparent
+      linear-gradient(180deg, #def0d8 0%, var(--unnamed-color-fafafa) 100%) 0%
+      0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #def0d8 0%, #fafafa 100%) 0%
+      0% no-repeat padding-box;
+    &__container {
+      &::after {
+        width: 90vh;
+        height: 90vh;
+        z-index: 0;
+        top: -20vh;
+        right: -30vh;
+      }
+    }
+    .left-col {
+      width: 50%;
+
+      h1 {
+        margin-bottom: 0.2em;
+        color: black;
+      }
+
+      p {
+        color: #383833;
+      }
+
+      .btn {
+        padding: 0.8em 0.8em 0.8em 1.5em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width:645px) {
+  body .menu-container {
+    .card {
+      flex: 0 1 33%;
+    }
+
+    .wrap {
+      display: flex;
+      > div {
+        margin: 0.5em;
+      }
+    }
+  }
+
+  body .gallery__grid > img{
+    flex:0 1 31%;
+
+    width: 31%;
+    margin: .5em;
+    
+  }
+
+  .gallery{
+      padding: 2em;
+  }
+
+  body .opening-hours{
+      flex-direction: row;
+  }
+}

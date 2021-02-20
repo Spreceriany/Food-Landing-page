@@ -1,0 +1,14 @@
+@media only screen and(max-width:992px){
+    .hero{
+        width: 100%;
+        min-height: 80vh;
+        background: transparent linear-gradient(180deg, #DEF0D8 0%, var(--unnamed-color-fafafa) 100%) 0% 0% no-repeat padding-box;
+        background: transparent linear-gradient(180deg, #DEF0D8 0%, #FAFAFA 100%) 0% 0% no-repeat padding-box;
+        &__container{
+            padding: 2em;
+            height: 70vh;
+            display: grid;
+           
+        }
+    }
+}

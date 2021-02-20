@@ -1,0 +1,28 @@
+@media only screen and(min-width:29.62em){
+     body .hero{
+        &__container{
+            &::after {
+                 width: 100vw ;
+                 height: 100vw ;
+                 right: -20% ;
+                 top: 0 ;
+                
+                
+            }
+        }
+        .left-col{
+            h1,p{
+                color: black;
+            }
+
+
+    }
+
+    
+   
+    }
+    .about-container .left-col{
+        margin-left: auto;
+    }
+  
+}
