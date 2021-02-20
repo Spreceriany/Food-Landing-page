@@ -14,10 +14,10 @@
     <div class="overlay">
 
         <a href="">
-            <img src="images/wrapped_green_logo@2x.png" class="overlay-logo " alt="logo">
+            <img data-src="images/wrapped_green_logo@2x.png" class="overlay-logo b-lazy" alt="logo">
         </a>
 
-        <img src="/images/icon-close.svg" class="close " alt="close">
+        <img data-src="/images/icon-close.svg" class="close b-lazy" alt="close">
 
         <ul class="overlay-list">
             <li><a href="about">About us</a></li>
@@ -31,7 +31,7 @@
     <header>
 
         <a href="">
-            <img data-src="images/wrapped_green_logo@2x.png" class="header-logo b-lazy" alt="logo">
+            <img data-src="images/wrapped_green_logo@2x.png" class="header-logo" alt="logo">
         </a>
         <nav>
             <ul class="header-links">
@@ -40,7 +40,7 @@
                 <li><a href="contact">Contact</a></li>
             </ul>
             <div class="burger">
-                <img data-src="images/icon-hamburger.svg" alt="hamburger-icon" class="b-lazy">
+                <img data-src="images/icon-hamburger.svg" alt="hamburger-icon">
             </div>
 
         </nav>
@@ -208,7 +208,7 @@
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script>
         var blazy = new Blazy({
-            offset:200
+         
         });
       </script>
 </body>
