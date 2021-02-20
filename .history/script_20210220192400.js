@@ -1,5 +1,3 @@
-
-
 gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
 
 const overlay = document.querySelector(".overlay");

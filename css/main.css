@@ -275,6 +275,10 @@ header .burger {
           box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   overflow-x: hidden;
