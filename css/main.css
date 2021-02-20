@@ -302,6 +302,7 @@ p {
   min-height: 73vh;
   z-index: 1;
   position: relative;
+  visibility: hidden;
 }
 
 .hero__container {
