@@ -44,7 +44,7 @@ p {
   min-height: 73vh;
   z-index: 1;
   position: relative;
- 
+  visibility: hidden;
 
   &__container {
     padding: 2em;
@@ -363,11 +363,11 @@ p {
       }
     }
   }
-
-}
-@media only screen and(max-width:34.8em){
+  @media only screen and(max-width:34.8em){
   body .footer .row:first-of-type img{
     width: 80%;
   }
 }
+}
+
 

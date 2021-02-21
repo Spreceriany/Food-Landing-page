@@ -44,7 +44,7 @@ p {
   min-height: 73vh;
   z-index: 1;
   position: relative;
- 
+  visibility: hidden;
 
   &__container {
     padding: 2em;
@@ -322,6 +322,11 @@ p {
     z-index: -1;
   }
  
+  img {
+    width: 20%;
+    height: auto;
+  }
+
   .row {
     padding-top: 3em;
     display: flex;
@@ -363,11 +368,10 @@ p {
       }
     }
   }
-
 }
+
 @media only screen and(max-width:34.8em){
   body .footer .row:first-of-type img{
     width: 80%;
   }
 }
-

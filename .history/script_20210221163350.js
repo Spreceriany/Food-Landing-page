@@ -34,7 +34,7 @@ window.addEventListener("load", (event) => {
 
   const rule = CSSRulePlugin.getRule(".hero__container::after");
 
-  t2
+  t2.set(".hero", { visibility: "visible" })
     .from(
       ".left-col-hero",
       {
@@ -87,7 +87,7 @@ window.addEventListener("load", (event) => {
     );
   }
 
-  t2.delay(1.5)
+  t2.delay(1)
 });
 
 /*About*/

@@ -87,7 +87,7 @@ window.addEventListener("load", (event) => {
     );
   }
 
-  t2.delay(1.5)
+  t2.delay(2)
 });
 
 /*About*/
