@@ -90,8 +90,7 @@ if (x.matches) {
     },
     "-=4.5"
   );
-  }
-})
+}
 
 /*About*/
 
@@ -241,4 +240,4 @@ gsap.from(".gallery__grid img",{
 
 
 
-
+})
