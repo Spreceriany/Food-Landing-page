@@ -198,8 +198,9 @@ gsap.from(".gallery__grid img", {
   scrollTrigger: {
     trigger: ".gallery__grid img",
     scrub: 1,
-    start: " bottom bottom",
-    end: "bottom 30%"
+    start: " bottom",
+    end: "40% 40%",
+    markers:true
   },
 });
 

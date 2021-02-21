@@ -23,17 +23,16 @@ closeIcon.addEventListener("click", () => {
   t1.reverse(0.8);
 });
 
+t2.set(".hero",{visibility:"hidden"})
+window.addEventListener("load", (event) => {
+  /*hero*/
+
   const t2 = gsap.timeline({
     defaults: {
       ease: Back.easeOut.config(1),
       duration: 1,
     },
   });
-t2.set(".hero",{visibility:"hidden"})
-window.addEventListener("load", (event) => {
-  /*hero*/
-
-
 
   const rule = CSSRulePlugin.getRule(".hero__container::after");
 
@@ -90,7 +89,7 @@ window.addEventListener("load", (event) => {
     );
   }
 
-  t2.delay(1)
+  t2.delay(1.5)
 });
 
 /*About*/
@@ -175,7 +174,7 @@ gsap.from(".card__stagger", {
     trigger: ".card__stagger",
     scrub: 1,
     start: "top bottom",
-    end: "30% 70%"
+    end: "30% 70%",
   },
 });
 
@@ -198,8 +197,8 @@ gsap.from(".gallery__grid img", {
   scrollTrigger: {
     trigger: ".gallery__grid img",
     scrub: 1,
-    start: " bottom bottom",
-    end: "bottom 30%"
+    start: "top bottom",
+    end: "30% 40%",
   },
 });
 

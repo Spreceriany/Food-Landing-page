@@ -90,7 +90,7 @@ window.addEventListener("load", (event) => {
     );
   }
 
-  t2.delay(1)
+  t2.delay(1.5)
 });
 
 /*About*/
@@ -175,7 +175,7 @@ gsap.from(".card__stagger", {
     trigger: ".card__stagger",
     scrub: 1,
     start: "top bottom",
-    end: "30% 70%"
+    end: "30% 70%",
   },
 });
 
@@ -198,8 +198,8 @@ gsap.from(".gallery__grid img", {
   scrollTrigger: {
     trigger: ".gallery__grid img",
     scrub: 1,
-    start: " bottom bottom",
-    end: "bottom 30%"
+    start: "top bottom",
+    end: "30% 40%",
   },
 });
 

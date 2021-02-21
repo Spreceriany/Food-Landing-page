@@ -199,7 +199,8 @@ gsap.from(".gallery__grid img", {
     trigger: ".gallery__grid img",
     scrub: 1,
     start: " bottom bottom",
-    end: "bottom 30%"
+    end: "bottom 40%",
+    markers:true
   },
 });
 
